@@ -39,19 +39,26 @@ export class TicketsComponent implements OnInit {
     return;
   }
 
-  public handleErrors(result: any): any {
+  public handleErrors(result: any): string {
+    let errorRes = "";
     if (!result.ok) {
       switch (result.status) {
         case 400:
-          document.getElementById("errors").innerHTML = result.statusText + ': Invalid Ticket';
+          errorRes = result.statusText + ': Invalid Ticket';
+          break;
         case 401:
-          document.getElementById("errors").innerHTML = result.statusText + 'Authentication error';
+          errorRes = result.statusText + 'Authentication error';
+          break;
         case 404:
-          document.getElementById("errors").innerHTML = result.statusText + ': Cannot find the ticket';
+          errorRes = result.statusText + ': Cannot find the ticket';
+          break;
         default:
-          document.getElementById("errors").innerHTML = result.statusText;
+          errorRes = result.statusText;
       }
+
+      document.getElementById("errors").innerHTML = errorRes;
     }
-    return result;
+
+    return errorRes;
   }
 }
