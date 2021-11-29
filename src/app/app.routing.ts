@@ -7,15 +7,15 @@ export const routes: Routes = [
     path: '',
     redirectTo: '/',
     pathMatch: 'full',
-  },{
+  }, {
     path: 'tickets',
     component: TicketsComponent
   }
 ];
 
 @NgModule({
-  imports: [ RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' }) ],
-  exports: [ RouterModule ]
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
 export const routingComponent = [TicketsComponent];

@@ -1,0 +1,40 @@
+details {
+    font: 16px "Open Sans", Calibri, sans-serif;
+    color:rgb(78, 75, 75);
+    width: 620px;
+  }
+  
+  details > summary {
+    padding: 2px 6px;
+    width: 25em;
+    background-color: rgb(217, 228, 250);
+    border: none;
+    box-shadow: 3px 3px 4px rgb(20, 76, 87);
+    cursor: pointer;
+  }
+  
+  details > p {
+    border-radius: 0 0 10px 10px;
+    background-color: rgb(165, 202, 170);
+    padding: 2px 6px;
+    margin: 0;
+    box-shadow: 3px 3px 4px rgb(0, 0, 0);
+  }
+  
+  details[open] > summary {
+    background-color: #ccf;
+  }
+
+  .containerBox{
+      height: max-content;
+      width: fit-content;
+      margin-left: 100px;
+  }
+
+  .totalCountHeading{
+    font-size: 15px; 
+    color: rgb(80, 80, 83);
+    font-style: normal;
+    font-weight: 600;
+    margin: 5px 0px;
+  }

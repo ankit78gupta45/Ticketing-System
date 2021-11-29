@@ -1,5 +1,25 @@
+<div *ngIf="isActive" class="containerBox">
+    <div class="totalCountHeading">Total : {{
+        config?.totalItems }}
+        tickets</div>
 
-<div *ngFor="let ticket of allTickets">
-    <span>{{ticket.subject}}</span>
-    <span>{{ticket.description}}</span>
-</div> 
+    <div class="ticketDiv">
+        <div>
+            <div *ngFor="let ticket of allTickets | paginate: config">
+                <details>
+                    <summary>{{ticket.subject.charAt(0) | uppercase}}{{ticket.subject.slice(1)}}</summary>
+                    <p>
+                        <b>TicketId:</b> {{ticket.id}}<br> <b>Requester Id:</b> {{ticket.requester_id}}
+                        <br><b>Description:</b>
+                        {{ticket.description}}
+                    </p>
+                </details>
+                <div style="height: 4px;"></div>
+            </div>
+            <div class="pagingDiv">
+                <pagination-controls (pageChange)="pageChanged($event)"></pagination-controls>
+            </div>
+        </div>
+    </div>
+</div>
+<div *ngIf="!isActive" id="errors"></div>

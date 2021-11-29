@@ -8,19 +8,24 @@ import { TicketsComponent } from './tickets/tickets.component';
 import { TicketsService } from './services/tickets.service';
 import { HttpClientModule } from '@angular/common/http';
 
+import { NgxPaginationModule } from 'ngx-pagination';
+import { MatPaginatorModule } from '@angular/material/paginator';
+
 @NgModule({
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    MatPaginatorModule,
+    NgxPaginationModule
   ],
   declarations: [
     AppComponent,
     routingComponent,
     TicketsComponent
   ],
-  bootstrap: [ AppComponent ],
+  bootstrap: [AppComponent],
   providers: [TicketsService]
 })
 export class AppModule { }
