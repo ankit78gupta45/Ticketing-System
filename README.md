@@ -67,6 +67,11 @@ free-angular-admin-template/
 ├── package.json
 └── ...
 ```
+**Screenshot**
+
+<img width="1440" alt="Screen Shot 2021-11-28 at 9 48 34 PM" src="https://user-images.githubusercontent.com/15800071/143815501-1b756bfa-1bac-44ad-8163-2387bd624d81.png">
+
+<img width="1440" alt="Screen Shot 2021-11-28 at 9 50 41 PM" src="https://user-images.githubusercontent.com/15800071/143815618-49f79d88-3052-4ad9-8953-6182718ae9e7.png">
 
 ## Creators
 
