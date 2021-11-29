@@ -15,12 +15,15 @@ npm install -g @angular/cli
 
 ## Installation
 
-Step 1: Clone the repository in local machine.
-Step 2: Run: npm install (It will load the NgModule, if any error comes then try removing the NgModule folder and run the command again)
-Step 3: Run npm start and open http://localhost:4200/. Website will get opened
+Step 1: Clone the repository in local machine (as stated below in clone section)
 
-Unit Testing
-To check unit testing run npm test
+Step 2: Run: `npm install` (It will load the NgModule, if any error comes then try removing the NgModule folder and run the command again)
+
+Step 3: Run `npm start` and open http://localhost:4200/  (Website will get opened)
+
+**Unit Testing**
+
+To check unit testing run `npm test`
 
 ### Clone repo
 
